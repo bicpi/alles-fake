@@ -1,0 +1,10 @@
+User:
+    user_{1..50}:
+        name: <name()>
+        email (unique): <email()>
+        street: Mustermannstr. 3
+        zip: 38498
+        favoriteColor: "#000033"
+        timezone: Europe/Berlin
+        bio: Lorem ipsum
+        skills: <skills(1, 3)>

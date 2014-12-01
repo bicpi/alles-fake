@@ -1,0 +1,12 @@
+User:
+    user_{Max, Erika}:
+        name: <current()> Mustermann
+        email: <current()>@mustermann.de
+        street: Mustermannstr. 3
+        zip: 38498
+        favoriteColor: "#000033"
+        timezone: Europe/Berlin
+        bio: Lorem ipsum
+        skills:
+            - PHP
+            - JavaScript

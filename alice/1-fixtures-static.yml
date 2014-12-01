@@ -1,0 +1,23 @@
+User:
+    user_max:
+        name: Max Mustermann
+        email: max@mustermann.de
+        street: Mustermannstr. 3
+        zip: 38498
+        favoriteColor: "#000033"
+        timezone: Europe/Berlin
+        bio: Lorem ipsum
+        skills:
+            - PHP
+            - JavaScript
+    user_erika:
+        name: Erika Musterfrau
+        email: erika@musterfrau.de
+        street: Musterfraustr. 7
+        zip: 93849
+        favoriteColor: "#FF0000"
+        timezone: Europe/Berlin
+        bio: ~
+        skills:
+            - SQL
+            - NoSQL
