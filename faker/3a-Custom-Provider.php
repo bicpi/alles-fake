@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once 'vendor/autoload.php';
+require_once __DIR__.'/../bootstrap.php';
 
 $faker = Faker\Factory::create();
 
@@ -18,4 +18,4 @@ class MyProvider
 $faker->addProvider(new MyProvider());
 
 // z.B. "JavaScript"
-echo $faker->skill;
+echo $faker->skill . "\n";

@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once 'vendor/autoload.php';
+require_once __DIR__.'/../bootstrap.php';
 
 $faker = Faker\Factory::create();
 
@@ -20,4 +20,4 @@ $faker->addProvider(new MyProvider($faker));
 
 // 1-3 zufällig Skills mit 75%-iger Wahscheinlichkeit
 // z.B. "JavaScript, NoSQL"
-echo implode(', ', $faker->optional(.75, [])->skills(1, 3));
+echo implode(', ', $faker->optional(.75, [])->skills(1, 3)) . "\n";

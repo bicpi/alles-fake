@@ -1,8 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once 'vendor/autoload.php';
-require_once 'User.php';
+require_once __DIR__.'/../bootstrap.php';
 
 $names = ['Klara Fall', 'Rainer Zufall'/*, ...*/];
 shuffle($names);
@@ -39,4 +38,4 @@ for ($i = 0; $i < 10; $i++) {
 
 var_dump($users);exit;
 // $users persistieren
-$objectManager->persist($users);
+// $objectManager->persist($users);

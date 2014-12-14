@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once 'vendor/autoload.php';
+require_once __DIR__.'/../bootstrap.php';
 
 $faker = Faker\Factory::create();
 
@@ -18,4 +18,4 @@ class MyProvider extends \Faker\Provider\Base
 $faker->addProvider(new MyProvider($faker));
 
 // z.B. "Google"
-echo $faker->company;
+echo $faker->company . "\n";

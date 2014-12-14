@@ -1,8 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once 'vendor/autoload.php';
-require_once 'User.php';
+require_once __DIR__.'/../bootstrap.php';
 
 $faker = Faker\Factory::create();
 

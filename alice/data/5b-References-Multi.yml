@@ -1,0 +1,26 @@
+User:
+    user_{1..3}:
+        name: <de_DE:name()>
+        email (unique): <fr_FR:email()>
+        street: Mustermannstr. 3
+        zip: 38498
+        favoriteColor: "#000033"
+        timezone: Europe/Berlin
+        bio: Lorem ipsum
+        skills:
+            - PHP
+            - JavaScript
+
+Team:
+#    team_red:
+#      name: Foobar
+#      members:
+#          - @user_2
+#          - @user_5
+#          - @user_48
+#    team_green:
+#      name: Foobar
+#      members: 2x @user_*
+    team_blue:
+      name: Foobar
+      members: [@user_*, @user_*]

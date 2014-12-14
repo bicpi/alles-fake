@@ -1,9 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once 'vendor/autoload.php';
-require_once 'bootstrap-doctrine.php';
-require_once 'Entity/User.php';
+require_once __DIR__.'/../bootstrap.php';
 
 $entityManager = GetEntityManager();
 $repo = $entityManager->getRepository('User');

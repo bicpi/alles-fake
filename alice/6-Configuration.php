@@ -1,9 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-require_once '../vendor/autoload.php';
-require_once '../Entity/User.php';
-
+require_once __DIR__.'/../bootstrap.php';
 
 class MyProvider
 {
@@ -20,7 +18,7 @@ class MyProvider
 $loader = new Nelmio\Alice\Loader\Yaml('de_DE', [new MyProvider()], null);
 
 // Fixtures aus fixtures.yml laden und daraus Objekte erzeugen
-$objects = $loader->load(__DIR__.'/5-fixtures-configuration.yml');
+$objects = $loader->load(__DIR__.'/data/6-Configuration.yml');
 
 // ...
 var_dump($objects);
